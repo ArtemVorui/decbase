@@ -1,33 +1,35 @@
+@import '../../styles/variables';
+
 .navibar {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-open-sans;
 
   &__btn {
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: $font-weight-600;
+    font-size: $font-size-16;
     line-height: 22px;
-    background-color: #CAA892;
+    background-color: $btn-nav-bg-color;
     border-radius: 15px 0;
-    color: #fff;
-    border: 2px solid #CAA892;
+    color: $btn-color;
+    border: $btn-nav-border;
     padding: 8px 20px;
 
     &:hover {
-      color: #CAA892;
-      background-color: #fff;
+      color: $btn-nav-hover-color;
+      background-color: $btn-hover-bg-color;
     }
   }
 
   &__link {
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: $font-weight-600;
+    font-size: $font-size-16;
     line-height: 22px;
-    color: #212121;
-    border: 2px solid rgba(0, 0, 0, 0);
+    color: $nav-link-color;
+    border: $nav-link-border;
     border-radius: 15px 0;
 
     &:hover {
-      color: #37806B;
-      border: 2px solid #37806B;
+      color: $nav-link-hover-color;
+      border: $nav-link-hover-border;
     }
   }
 }

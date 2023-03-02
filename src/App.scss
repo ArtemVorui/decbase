@@ -1,6 +1,6 @@
 @import-normalize;
-@import 'fonts';
-@import 'custom';
+@import './styles/fonts';
+@import './styles/custom';
 
 * {
   transition: all .5s;

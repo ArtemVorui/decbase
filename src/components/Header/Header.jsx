@@ -10,7 +10,7 @@ const Header = () => {
             <Container id='project' className={s.header}>
                 <Row>
                     <Col className={`d-flex flex-column justify-content-center`}>
-                        <h2 className={s.header__subtitle}>MODERN INTERIOR</h2>
+                        <h3 className={s.header__subtitle}>MODERN INTERIOR</h3>
                         <h1 className={`mb-5 ${s.header__title}`}>Create Your Interior Design.</h1>
                         <p className={`mb-5 ${s.header__text}`}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
