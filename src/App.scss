@@ -1,1 +1,13 @@
 @import-normalize;
+@import 'fonts';
+@import 'custom';
+
+* {
+  transition: all .5s;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
