@@ -1,10 +1,10 @@
 import './App.scss';
-import Navibar from './components/Header/Navbar';
+import Header from './components/Header/Header';
 
 function App() {
   return (
       <>
-        <Navibar/>
+        <Header/>
       </>
   );
 }
