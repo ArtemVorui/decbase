@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.filter {
+  border: $btn-filter-border;
+  border-radius: 20px;
+  background: $btn-filter-bg-color;
+  color: $btn-filter-color;
+  font-weight: $font-weight-700;
+  width: 180px;
+  height: 46px;
+
+  &:hover {
+    color: $btn-filter-hover-color;
+    background: $btn-filter-hover-bg-color;
+  }
+}
