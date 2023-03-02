@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div className={s.container}>
             <Navibar/>
-            <Container className={s.header}>
+            <Container id='project' className={s.header}>
                 <Row>
                     <Col className={`d-flex flex-column justify-content-center`}>
                         <h2 className={s.header__subtitle}>MODERN INTERIOR</h2>
