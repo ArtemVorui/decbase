@@ -1,49 +1,53 @@
+@import '../../styles/variables';
+
 .container {
   background-image: url('../../assets/images/dots.png');
   background-repeat: no-repeat;
   background-position: left bottom;
   height: 85vh;
+  margin-bottom: 144px;
 }
 
 .header {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-open-sans;
 
   &__subtitle {
-    font-weight: 600;
-    font-size: 20px;
+    font-family: $font-poppins;
+    font-weight: $font-weight-600;
+    font-size: $font-size-20;
     line-height: 27px;
-    color: #646464;
+    color: $subtitle-color;
   }
 
   &__title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 72px;
+    font-family: $font-poppins;
+    font-weight: $font-weight-600;
+    font-size: $font-size-72;
     line-height: 78px;
-    color: #212121;
+    color: $title-color;
   }
 
   &__text {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: $font-weight-400;
+    font-size: $font-size-18;
     line-height: 30px;
-    color: #646464;
+    color: $text-color;
   }
 
   &__btn {
     display: block;
     width: 150px;
     border-radius: 20px 0;
-    background-color: #37806B;
-    border: 2px solid #37806B;
-    color: #fff;
-    font-weight: 700;
-    font-size: 18px;
+    background-color: $btn-bg-color;
+    border: $btn-border;
+    color: $btn-color;
+    font-weight: $font-weight-700;
+    font-size: $font-size-18;
     line-height: 40px;
 
     &:hover {
-      color: #37806B;
-      background-color: #fff;
+      color: $btn-hover-color;
+      background-color: $btn-hover-bg-color;
     }
   }
 
@@ -62,7 +66,7 @@
       height: 100%;
       top: 30px;
       left: 30px;
-      border: 2px solid #B0855B;
+      border: $img-after-border;
       border-radius: 140px 0;
       z-index: -1;
     }
