@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+.container {
+  background-image: url('../../assets/images/dots2.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 85vh;
+  margin-bottom: 144px;
+}
+
+.services {
+  font-family: $font-open-sans;
+
+  &__subtitle {
+    font-family: $font-poppins;
+    font-weight: $font-weight-600;
+    font-size: $font-size-20;
+    line-height: 27px;
+    color: $subtitle-color;
+  }
+
+  &__title {
+    font-family: $font-poppins;
+    font-weight: $font-weight-500;
+    font-size: $font-size-48;
+    line-height: 78px;
+  }
+}
