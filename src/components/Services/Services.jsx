@@ -10,10 +10,10 @@ const Services = () => {
                 <Row>
                     <Col>
                         <h3 className={s.services__subtitle}>WHAT WE DO</h3>
-                        <h2 className={`mb-4 ${s.services__title}`}>Our Service</h2>
+                        <h2 className={`mb-xxl-4 mb-xl-4 mb-lg-4 mb-2 ${s.services__title}`}>Our Service</h2>
                     </Col>
                 </Row>
-                <Row className={`mb-5`}>
+                <Row className={`mb-xxl-5 mb-xl-5 mb-lg-5 mb-3`}>
                     <Filters/>
                 </Row>
                 <Row className={`justify-content-between justify-content-lg-around`}>
