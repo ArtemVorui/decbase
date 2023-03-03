@@ -68,6 +68,7 @@
     border: $btn-border;
     color: $btn-color;
     font-weight: $font-weight-700;
+    padding: 5px 10px;
 
     &:hover {
       color: $btn-hover-color;
@@ -129,14 +130,14 @@
     background: none;
   }
 
-  .about__img_top_block:after {
-    top: 15px;
-    left: 15px;
+  .about__img_top_block:after, {
+    bottom: 12px;
+    right: 12px;
   }
 
   .about__img_bot_block:after {
-    top: 15px;
-    left: 15px;
+    top: 12px;
+    left: 12px;
   }
 }
 
@@ -150,8 +151,8 @@
   }
 
   .about__img_top_block:after {
-    top: 5px;
-    left: 5px;
+    bottom: 5px;
+    right: 5px;
   }
 
   .about__img_bot_block:after {

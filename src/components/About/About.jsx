@@ -12,7 +12,7 @@ const About = () => {
                     <Col>
                         <div
                             className={`me-xxl-5 me-xl-4 me-lg-3 me-md-0 me-0 ms-xxl-4 ms-lx-4 ms-lg-4 ms-md-4 ms-ms-1 ${s.about__img_top_block}`}>
-                            <img src={imgSrc1} alt='interior1'/>
+                            <img src={imgSrc1} alt='interior'/>
                         </div>
                     </Col>
                     <Col className={`d-flex flex-column col-md-6 col-sm-12 col-12`}>
@@ -43,7 +43,7 @@ const About = () => {
                     <Col>
                         <div
                             className={`ms-xxl-5 ms-xl-4 ms-lg-3 ms-md-2 ms-sm-0 ms-0 mt-5 me-1 ${s.about__img_bot_block}`}>
-                            <img src={imgSrc2} alt='interior2'/>
+                            <img src={imgSrc2} alt='interior'/>
                         </div>
                     </Col>
                 </Row>

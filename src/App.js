@@ -4,6 +4,7 @@ import Services from './components/Services/Services';
 import About from './components/About/About';
 import Statistics from './components/Statistics/Statistics';
 import Testimonials from './components/Testimonials/Testimonials';
+import Blog from './components/Blog/Blog';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <About/>
         <Statistics/>
         <Testimonials/>
+        <Blog/>
       </>
   );
 }
