@@ -1,0 +1,128 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.container {
+  background-image: url('../../assets/images/dots.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-bottom: 140px;
+}
+
+.testimonials {
+  font-family: $font-poppins;
+
+  &__subtitle {
+    @include adaptive-font(20, 14);
+    font-weight: $font-weight-500;
+    color: $subtitle-color;
+  }
+
+  &__title {
+    @include adaptive-font(48, 22);
+    font-weight: $font-weight-500;
+    color: $title-color;
+  }
+
+  &__btn {
+    width: 30px;
+    height: 30px;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    padding: 9px;
+    border: none;
+
+    &.previous {
+      background-image: url('../../assets/icons/previous.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: $btn-bg-color-w;
+
+      &:hover {
+        box-shadow: $btn-shadow;
+      }
+    }
+
+    &.next {
+      background-image: url('../../assets/icons/next.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: $btn-bg-color;
+
+      &:hover {
+        box-shadow: $btn-shadow;
+      }
+    }
+  }
+
+  &__card {
+    background: $card-bg-color-w;
+    box-shadow: $card-comment-shadow;
+    border-radius: 70px 0;
+    font-family: $font-open-sans;
+    padding: 30px 90px;
+    position: relative;
+
+    &_name {
+      @include adaptive-font(24, 14);
+      font-weight: $font-weight-700;
+      color: $title-color;
+      white-space: nowrap;
+
+      &:after {
+        content: '';
+        position: absolute;
+        background-image: url('../../assets/icons/quotes.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        width: 70px;
+        height: 33px;
+      }
+    }
+
+    &_position {
+      @include adaptive-font(16, 12);
+      font-weight: $font-weight-400;
+      color: $text-color;
+      position: relative;
+    }
+
+    &_text {
+      @include adaptive-font(18, 12);
+      font-weight: $font-weight-400;
+      color: $text-color;
+      margin: 0;
+    }
+
+    &_avatar_block img {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 35px;
+      left: -45px;
+      border-radius: 30px 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials__card {
+    padding: 25px 65px;
+  }
+
+  .testimonials__card_name:after {
+    width: 50px;
+  }
+
+  .testimonials__card_avatar_block img {
+    width: 50px;
+    height: 50px;
+    left: 5px;
+    border-radius: 20px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .testimonials__card_name:after {
+    display: none;
+  }
+}
