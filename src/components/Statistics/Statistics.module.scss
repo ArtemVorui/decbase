@@ -2,7 +2,7 @@
 @import '../../styles/mixins';
 
 .container {
-  background-color: #F8F8F8;
+  background-color: $container-bg-color;
   height: 60vh;
 }
 
@@ -21,7 +21,7 @@
   }
 
   &__card {
-    background: #FFFFFF;
+    background: $card-bg-color-w;
     box-shadow: 0 13px 16px rgba(0, 0, 0, 0.1);
     border-radius: 40px 0;
     max-width: 200px;

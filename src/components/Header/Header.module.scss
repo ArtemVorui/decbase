@@ -69,9 +69,10 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .container {
-    margin-bottom: 0;
+    margin-bottom: 90px;
+    height: 75vh;
   }
 }
 
@@ -79,10 +80,21 @@
   .container {
     margin-bottom: 30px;
   }
-}
 
-@media (max-width: 768px) {
-  .container {
-    margin-bottom: 90px;
+  .header__img_block:after {
+    top: 15px;
+    left: 15px;
   }
 }
+
+@media (max-width: 320px) {
+  .container {
+    margin-bottom: 0;
+  }
+
+  .header__img_block:after {
+    top: 5px;
+    left: 5px;
+  }
+}
+

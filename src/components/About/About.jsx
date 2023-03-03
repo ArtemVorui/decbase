@@ -10,12 +10,14 @@ const About = () => {
             <Container className={s.about}>
                 <Row className={s.about__row}>
                     <Col>
-                        <div className={`me-xxl-5 me-xl-4 me-lg-3 me-md-0 me-0 ms-4 ${s.about__img_top_block}`}>
+                        <div
+                            className={`me-xxl-5 me-xl-4 me-lg-3 me-md-0 me-0 ms-xxl-4 ms-lx-4 ms-lg-4 ms-md-4 ms-ms-1 ${s.about__img_top_block}`}>
                             <img src={imgSrc1} alt='interior1'/>
                         </div>
                     </Col>
                     <Col className={`d-flex flex-column col-md-6 col-sm-12 col-12`}>
-                        <h3 className={`mb-xxl-5 mb-xl-4 mb-lg-3 mb-md-2 mb-sm-1 mb-1 ${s.about__subtitle}`}>ABOUT US</h3>
+                        <h3 className={`mb-xxl-5 mb-xl-4 mb-lg-3 mb-md-2 mb-sm-1 mb-1 ${s.about__subtitle}`}>ABOUT
+                            US</h3>
                         <h2 className={s.about__title}>Interioris The Will of An Epoch Mextreo</h2>
                         <p className={`mb-xxl-5 mb-xl-4 mb-lg-3 mb-md-2 mb-sm-1 mb-1 ${s.about__text}`}>
                             There are many variations of passages of Lorem Ipsum available, but the majority have
@@ -39,7 +41,8 @@ const About = () => {
                         <button className={s.about__btn}>READ MORE</button>
                     </Col>
                     <Col>
-                        <div className={`ms-xxl-5 ms-xl-4 ms-lg-3 ms-md-2 ms-sm-0 ms-0 mt-5 me-1 ${s.about__img_bot_block}`}>
+                        <div
+                            className={`ms-xxl-5 ms-xl-4 ms-lg-3 ms-md-2 ms-sm-0 ms-0 mt-5 me-1 ${s.about__img_bot_block}`}>
                             <img src={imgSrc2} alt='interior2'/>
                         </div>
                     </Col>

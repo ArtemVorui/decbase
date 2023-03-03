@@ -26,9 +26,9 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .container {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
   }
 }
 
@@ -38,8 +38,8 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .container {
-    margin-bottom: 90px;
+    margin-bottom: 50px;
   }
 }

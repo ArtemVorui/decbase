@@ -5,13 +5,13 @@
   @include adaptive-font(16, 11);
   border: $btn-filter-border;
   border-radius: 20px;
-  background: $btn-filter-bg-color;
-  color: $btn-filter-color;
+  background: $btn-bg-color;
+  color: $btn-color;
   font-weight: $font-weight-700;
   width: 180px;
 
   &:hover {
-    color: $btn-filter-hover-color;
-    background: $btn-filter-hover-bg-color;
+    color: $btn-hover-color;
+    background: $btn-hover-bg-color;
   }
 }
