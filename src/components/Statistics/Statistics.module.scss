@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.container {
+  background-color: #F8F8F8;
+  height: 60vh;
+}
+
+.statistics {
+  font-family: $font-open-sans;
+
+  &__title {
+    @include adaptive-font(48, 22);
+    font-family: $font-poppins;
+    font-weight: $font-weight-500;
+    color: $title-color;
+  }
+
+  &__row {
+    height: 250px;
+  }
+
+  &__card {
+    background: #FFFFFF;
+    box-shadow: 0 13px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 40px 0;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 30px 10px;
+
+    &_value {
+      @include adaptive-font(50, 22);
+      font-weight: $font-weight-700;
+      color: $title-color;
+      margin: 0;
+    }
+
+    &_name {
+      @include adaptive-font(18, 12);
+      font-weight: $font-weight-400;
+      color: $text-color;
+      margin: 0;
+    }
+  }
+
+  &__curve_rotate {
+    transform: rotateX(180deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}
