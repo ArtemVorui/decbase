@@ -1,17 +1,17 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .navibar {
   font-family: $font-open-sans;
 
   &__btn {
+    @include adaptive-font(16, 13);
     font-weight: $font-weight-600;
-    font-size: $font-size-16;
-    line-height: 22px;
     background-color: $btn-nav-bg-color;
     border-radius: 15px 0;
     color: $btn-color;
     border: $btn-nav-border;
-    padding: 8px 20px;
+    padding: 2px 20px;
 
     &:hover {
       color: $btn-nav-hover-color;
@@ -20,9 +20,8 @@
   }
 
   &__link {
+    @include adaptive-font(16, 12);
     font-weight: $font-weight-600;
-    font-size: $font-size-16;
-    line-height: 22px;
     color: $nav-link-color;
     border: $nav-link-border;
     border-radius: 15px 0;

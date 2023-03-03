@@ -1,10 +1,12 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .card {
   box-shadow: $card-shadow;
   border-radius: 60px 0;
   padding: 30px 20px 30px 90px;
   max-width: 430px;
+  background-color: $card-bg-color-w;
 
   &.interior {
     & h4:before {
@@ -56,17 +58,15 @@
   }
 
   &__title {
+    @include adaptive-font(24, 14);
     font-weight: $font-weight-700;
-    font-size: $font-size-24;
-    line-height: 78px;
     color: $title-color;
     position: relative;
   }
 
   &__text {
+    @include adaptive-font(18, 12);
     font-weight: $font-weight-400;
-    font-size: $font-size-18;
-    line-height: 28px;
     color: $text-color;
     margin: 0;
   }
