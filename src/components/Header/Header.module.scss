@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .container {
   background-image: url('../../assets/images/dots.png');
@@ -12,38 +13,33 @@
   font-family: $font-open-sans;
 
   &__subtitle {
+    @include adaptive-font(20, 14);
     font-family: $font-poppins;
     font-weight: $font-weight-600;
-    font-size: $font-size-20;
-    line-height: 27px;
     color: $subtitle-color;
   }
 
   &__title {
+    @include adaptive-font(72, 24);
     font-family: $font-poppins;
     font-weight: $font-weight-600;
-    font-size: $font-size-72;
-    line-height: 78px;
     color: $title-color;
   }
 
   &__text {
+    @include adaptive-font(18, 12);
     font-weight: $font-weight-400;
-    font-size: $font-size-18;
-    line-height: 30px;
     color: $text-color;
   }
 
   &__btn {
-    display: block;
+    @include adaptive-font(18, 11);
     width: 150px;
     border-radius: 20px 0;
     background-color: $btn-bg-color;
     border: $btn-border;
     color: $btn-color;
     font-weight: $font-weight-700;
-    font-size: $font-size-18;
-    line-height: 40px;
 
     &:hover {
       color: $btn-hover-color;
@@ -70,5 +66,23 @@
       border-radius: 140px 0;
       z-index: -1;
     }
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-bottom: 90px;
   }
 }

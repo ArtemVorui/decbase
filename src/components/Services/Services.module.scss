@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .container {
   background-image: url('../../assets/images/dots2.png');
@@ -12,17 +13,33 @@
   font-family: $font-open-sans;
 
   &__subtitle {
+    @include adaptive-font(20, 14);
     font-family: $font-poppins;
     font-weight: $font-weight-600;
-    font-size: $font-size-20;
-    line-height: 27px;
     color: $subtitle-color;
   }
 
   &__title {
+    @include adaptive-font(48, 22);
     font-family: $font-poppins;
     font-weight: $font-weight-500;
-    font-size: $font-size-48;
-    line-height: 78px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-bottom: 90px;
   }
 }
