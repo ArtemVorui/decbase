@@ -10,7 +10,7 @@
 
 .about {
   font-family: $font-poppins;
-  
+
   &__row {
     background-image: url('../../assets/images/dots.png');
     background-repeat: no-repeat;
@@ -101,9 +101,21 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1200px) {
+  .about__row {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .about__row {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 768px) {
   .container {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
   }
 }
 
@@ -111,10 +123,39 @@
   .container {
     margin-bottom: 30px;
   }
+
+  .about__row {
+    height: 90vh;
+    background: none;
+  }
+
+  .about__img_top_block:after {
+    top: 15px;
+    left: 15px;
+  }
+
+  .about__img_bot_block:after {
+    top: 15px;
+    left: 15px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .container {
-    margin-bottom: 90px;
+    margin-bottom: 50px;
+  }
+
+  .about__row {
+    background: none;
+  }
+
+  .about__img_top_block:after {
+    top: 5px;
+    left: 5px;
+  }
+
+  .about__img_bot_block:after {
+    top: 5px;
+    left: 5px;
   }
 }
