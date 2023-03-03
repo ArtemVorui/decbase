@@ -104,7 +104,17 @@
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    margin-bottom: 90px;
+  }
+}
+
 @media (max-width: 576px) {
+  .container {
+    margin-bottom: 30px;
+  }
+
   .testimonials__card {
     padding: 25px 65px;
   }
