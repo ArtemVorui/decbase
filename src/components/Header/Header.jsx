@@ -5,20 +5,22 @@ import Navibar from './Navbar';
 
 const Header = () => {
     return (
-        <div className={s.container}>
+        <div id='project' className={s.container}>
             <Navibar/>
-            <Container id='project' className={s.header}>
+            <Container className={s.header}>
                 <Row>
-                    <Col className={`d-flex flex-column justify-content-center`}>
+                    <Col className={`col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center`}>
                         <h3 className={s.header__subtitle}>MODERN INTERIOR</h3>
-                        <h1 className={`mb-5 ${s.header__title}`}>Create Your Interior Design.</h1>
-                        <p className={`mb-5 ${s.header__text}`}>
+                        <h1 className={`mb-xxl-5 mb-xl-4 mb-lg-3 mb-md-2 mb-sm-1 mb-1 ${s.header__title}`}>
+                            Create Your Interior Design.
+                        </h1>
+                        <p className={`mb-xxl-5 mb-xl-4 mb-lg-3 mb-md-2 mb-sm-1 mb-1 ${s.header__text}`}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                         </p>
                         <button className={s.header__btn}>CONTACT</button>
                     </Col>
-                    <Col>
+                    <Col className='col-md-6 col-sm-12 col-12 mt-sm-4 mt-3'>
                         <div className={s.header__img_block}>
                             <img src={imgSrc} alt='interior'/>
                         </div>

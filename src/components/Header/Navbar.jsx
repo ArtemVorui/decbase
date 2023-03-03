@@ -4,7 +4,7 @@ import logoSrc from '../../assets/icons/logo.svg';
 
 const Navibar = () => {
     return (
-        <Navbar id='home' className={`mt-5 mb-5 ${s.navibar}`} collapseOnSelect expand='lg'>
+        <Navbar id='home' className={`my-xxl-5 my-xl-4 my-lg-3 my-md-2 my-sm-1 my-1 ${s.navibar}`} collapseOnSelect expand='lg'>
             <Container>
                 <Navbar.Brand href='/'>
                     <img src={logoSrc} alt='decbase-logo'/>
