@@ -1,0 +1,86 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.container {
+  background-image: url('../../assets/images/dots.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.contact {
+  font-family: $font-poppins;
+
+  &__title {
+    @include adaptive-font(48, 22);
+    font-weight: $font-weight-500;
+    color: $title-color;
+  }
+
+  &__hr {
+    border: 1px solid #C4C4C4;
+  }
+
+  &__text {
+    @include adaptive-font(18, 12);
+    font-family: $font-open-sans;
+    font-weight: $font-weight-400;
+    color: $text-color;
+  }
+
+  &__form {
+
+    & input {
+      @include adaptive-font(18, 12);
+      font-family: $font-raleway;
+      font-weight: $font-weight-500;
+      color: $text-color;
+      border-radius: 20px 0;
+      background: #EEEEEE;
+      outline: none;
+      border: none;
+      padding: 5px 20px;
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    @include adaptive-font(18, 11);
+    font-family: $font-open-sans;
+    font-weight: $font-weight-600;
+    color: $btn-color;
+    width: 180px;
+    border-radius: 20px 0;
+    background-color: $btn-bg-color;
+    border: $btn-border;
+    padding: 5px 10px;
+
+    &:hover {
+      color: $btn-hover-color;
+      background-color: $btn-hover-bg-color;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-position: bottom right;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
