@@ -1,0 +1,84 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.container {
+  padding-top: 90px;
+  padding-bottom: 18px;
+  background-color: $container-bg-color;
+  background-image: url('../../assets/images/dots.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.footer {
+  font-family: $font-open-sans;
+
+  &__logo_block {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    @include adaptive-font(18, 12);
+    font-weight: $font-weight-400;
+    color: $text-color;
+    margin: 0;
+  }
+
+  &__link {
+    @include adaptive-font(18, 12);
+    font-weight: $font-weight-400;
+    color: $text-color;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: $text-color;
+      text-decoration: underline;
+    }
+  }
+  
+  &__social_icon_block {
+    background-color: #d5d5d5;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    padding: 8px;
+    
+    &:hover {
+      background-color: #37806B;
+    }
+  }
+
+  &__hr {
+    border: 1px solid #C4C4C4;
+  }
+
+  &__copyright {
+    @include adaptive-font(18, 11);
+    font-family: $font-open-sans;
+    font-weight: $font-weight-400;
+    color: $text-color;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 60px;
+    background-position: center right;
+  }
+
+  .footer__social_icon_block {
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-top: 30px;
+    padding-bottom: 8px;
+  }
+}
