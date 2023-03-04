@@ -3,7 +3,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 const Contact = () => {
     return (
-        <div className={s.container}>
+        <div id='contact' className={s.container}>
             <Container className={s.contact}>
                 <Row className='justify-content-center text-center'>
                     <Col className='col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12'>
