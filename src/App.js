@@ -7,20 +7,39 @@ import Testimonials from './components/Testimonials/Testimonials';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contacts';
 import Footer from './components/Footer/Footer';
+import Preloader from './components/Preloader/Preloader';
+import {useEffect, useState} from 'react';
 
 function App() {
-  return (
-      <>
-        <Header/>
-        <Services/>
-        <About/>
-        <Statistics/>
-        <Testimonials/>
-        <Blog/>
-        <Contact/>
-        <Footer/>
-      </>
-  );
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 5000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    return (
+        <>
+            {loading ? (
+                <Preloader/>
+            ) : (
+                <>
+                    <Header/>
+                    <Services/>
+                    <About/>
+                    <Statistics/>
+                    <Testimonials/>
+                    <Blog/>
+                    <Contact/>
+                    <Footer/>
+                </>
+            )}
+        </>
+    );
 }
 
 export default App;
