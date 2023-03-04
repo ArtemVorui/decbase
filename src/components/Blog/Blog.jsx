@@ -7,7 +7,7 @@ const Blog = () => {
     return (
         <div id='blog' className={s.container}>
             <Container className={s.blog}>
-                <Row className='pt-5'>
+                <Row>
                     <Col className='text-center mb-xxl-5 mb-xl-5 mb-lg-5 mb-3'>
                         <h3 className={s.blog__subtitle}>LETEST NEWS</h3>
                         <h2 className={s.blog__title}>From Our Blog</h2>

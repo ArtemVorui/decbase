@@ -4,6 +4,7 @@
 .container {
   background-color: $container-bg-color;
   padding-bottom: 125px;
+  padding-top: 125px;
 }
 
 .blog {
@@ -80,6 +81,7 @@
 @media (max-width: 768px) {
   .container {
     padding-bottom: 60px;
+    padding-top: 60px;
   }
 
   .blog__news_img_block:after {
@@ -91,6 +93,7 @@
 @media (max-width: 576px) {
   .container {
     padding-bottom: 30px;
+    padding-top: 30px;
   }
 }
 
