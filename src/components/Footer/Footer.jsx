@@ -19,19 +19,19 @@ const Footer = () => {
                     </Col>
                     <Col className='col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 mb-3'>
                         <h3 className={s.footer__title}>Quick Links</h3>
-                        <a className={s.footer__link} href='#'>About Our Company</a>
-                        <a className={s.footer__link} href='#'>Services WE provide</a>
-                        <a className={s.footer__link} href='#'>Career & Opportunity</a>
-                        <a className={s.footer__link} href='#'>Privacy & policy</a>
-                        <a className={s.footer__link} href='#'>Contact US</a>
+                        <a className={s.footer__link} href='/'>About Our Company</a>
+                        <a className={s.footer__link} href='/'>Services WE provide</a>
+                        <a className={s.footer__link} href='/'>Career & Opportunity</a>
+                        <a className={s.footer__link} href='/'>Privacy & policy</a>
+                        <a className={s.footer__link} href='/'>Contact US</a>
                     </Col>
                     <Col className='col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 mb-3'>
                         <h3 className={s.footer__title}>Company</h3>
-                        <a className={s.footer__link} href='#'>About Company</a>
-                        <a className={s.footer__link} href='#'>Our Testimonials</a>
-                        <a className={s.footer__link} href='#'>Latest News</a>
-                        <a className={s.footer__link} href='#'>Our misson</a>
-                        <a className={s.footer__link} href='#'>Get a free Quot</a>
+                        <a className={s.footer__link} href='/'>About Company</a>
+                        <a className={s.footer__link} href='/'>Our Testimonials</a>
+                        <a className={s.footer__link} href='/'>Latest News</a>
+                        <a className={s.footer__link} href='/'>Our misson</a>
+                        <a className={s.footer__link} href='/'>Get a free Quot</a>
                     </Col>
                     <Col className='col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 mb-3'>
                         <h3 className={s.footer__title}>Contact us</h3>
@@ -44,28 +44,28 @@ const Footer = () => {
                         <h3 className={s.footer__title}>Follow Us</h3>
                         <Row>
                             <Col className='p-0 col-md-2 col-sm-1 col-1 ms-2'>
-                                <a href='https://www.facebook.com/' target='_blank'>
+                                <a href='https://www.facebook.com/' target='_blank' rel='noreferrer'>
                                     <div className={s.footer__social_icon_block}>
                                         <img src={iconSrc2} alt='facebook'/>
                                     </div>
                                 </a>
                             </Col>
                             <Col className='p-0 col-md-2 col-sm-1 col-1'>
-                                <a href='https://twitter.com/' target='_blank'>
+                                <a href='https://twitter.com/' target='_blank' rel='noreferrer'>
                                     <div className={s.footer__social_icon_block}>
                                         <img src={iconSrc3} alt='twitter'/>
                                     </div>
                                 </a>
                             </Col>
                             <Col className='p-0 col-md-2 col-sm-1 col-1'>
-                                <a href='https://www.instagram.com/' target='_blank'>
+                                <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
                                     <div className={s.footer__social_icon_block}>
                                         <img src={iconSrc4} alt='instagram'/>
                                     </div>
                                 </a>
                             </Col>
                             <Col className='p-0 col-md-2 col-sm-1 col-1'>
-                                <a href='https://www.linkedin.com/' target='_blank'>
+                                <a href='https://www.linkedin.com/' target='_blank' rel='noreferrer'>
                                     <div className={s.footer__social_icon_block}>
 
                                         <img src={iconSrc5} alt='linkedin'/>
