@@ -2,11 +2,13 @@ import s from './Header.module.scss';
 import {Container, Row, Col} from 'react-bootstrap';
 import imgSrc from '../../assets/images/h-1.jpg';
 import Navibar from './Navbar';
+import Progress from './Progress';
 
 const Header = () => {
     return (
         <div id='project' className={s.container}>
             <Navibar/>
+            <Progress/>
             <Container className={s.header}>
                 <Row>
                     <Col className={`col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center`}>
