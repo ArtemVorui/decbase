@@ -17,7 +17,14 @@ const Preloader = () => {
         <>
             {loading && (
                 <div className={s.preloader}>
-                    <div className={s.preloader__icon}>Loading...</div>
+                    <div className={s.preloader__icon}>
+                        <div className={s.preloader__icon_stair_1}></div>
+                        <div className={s.preloader__icon_stair_2}></div>
+                        <div className={s.preloader__icon_stair_3}></div>
+                        <div className={s.preloader__icon_stair_4}></div>
+                        <div className={s.preloader__icon_stair_5}></div>
+                        <div className={s.preloader__icon_dot}></div>
+                    </div>
                 </div>
             )}
         </>
