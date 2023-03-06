@@ -19,19 +19,19 @@ const Footer = () => {
                     </Col>
                     <Col className='col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 mb-3'>
                         <h3 className={s.footer__title}>Quick Links</h3>
-                        <a className={s.footer__link} href='/'>About Our Company</a>
-                        <a className={s.footer__link} href='/'>Services WE provide</a>
-                        <a className={s.footer__link} href='/'>Career & Opportunity</a>
-                        <a className={s.footer__link} href='/'>Privacy & policy</a>
-                        <a className={s.footer__link} href='/'>Contact US</a>
+                        <a className={s.footer__link} href='#'>About Our Company</a>
+                        <a className={s.footer__link} href='#'>Services WE provide</a>
+                        <a className={s.footer__link} href='#'>Career & Opportunity</a>
+                        <a className={s.footer__link} href='#'>Privacy & policy</a>
+                        <a className={s.footer__link} href='#'>Contact US</a>
                     </Col>
                     <Col className='col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 mb-3'>
                         <h3 className={s.footer__title}>Company</h3>
-                        <a className={s.footer__link} href='/'>About Company</a>
-                        <a className={s.footer__link} href='/'>Our Testimonials</a>
-                        <a className={s.footer__link} href='/'>Latest News</a>
-                        <a className={s.footer__link} href='/'>Our misson</a>
-                        <a className={s.footer__link} href='/'>Get a free Quot</a>
+                        <a className={s.footer__link} href='#'>About Company</a>
+                        <a className={s.footer__link} href='#'>Our Testimonials</a>
+                        <a className={s.footer__link} href='#'>Latest News</a>
+                        <a className={s.footer__link} href='#'>Our misson</a>
+                        <a className={s.footer__link} href='#'>Get a free Quot</a>
                     </Col>
                     <Col className='col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 mb-3'>
                         <h3 className={s.footer__title}>Contact us</h3>
