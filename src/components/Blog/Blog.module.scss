@@ -25,6 +25,13 @@
   }
 
   &__news {
+    opacity: 0;
+    transform: scale(0.95);
+
+    &.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
 
     &:hover {
       transform: scale(1.05);
