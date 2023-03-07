@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "imgSrc": "/images/ava1.jpg",
+    "name": "Louis Saville",
+    "position": " /CEO at Google",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": 2,
+    "imgSrc": "/images/ava2.jpg",
+    "name": "Rekha Varadwaz",
+    "position": " /Manager at Nike",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": 3,
+    "imgSrc": "/images/ava1.jpg",
+    "name": "Liam Parker",
+    "position": " /Freelance photographer",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": 4,
+    "imgSrc": "/images/ava2.jpg",
+    "name": "Ava Sanders",
+    "position": " /Design engineer",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": 5,
+    "imgSrc": "/images/ava1.jpg",
+    "name": "David Harrison",
+    "position": " /Investment analyst",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "id": 6,
+    "imgSrc": "/images/ava2.jpg",
+    "name": "Claire Matthews",
+    "position": " /Writer",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+]
