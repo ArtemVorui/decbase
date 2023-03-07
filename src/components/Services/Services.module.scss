@@ -5,8 +5,8 @@
   background-image: url('../../assets/images/dots2.png');
   background-repeat: no-repeat;
   background-position: right bottom;
-  height: 85vh;
-  margin-bottom: 144px;
+  padding-bottom: 144px;
+  margin-bottom: 10px;
 }
 
 .services {
@@ -24,22 +24,83 @@
     font-family: $font-poppins;
     font-weight: $font-weight-500;
   }
+
+  &__filter {
+    @include adaptive-font(16, 11);
+    border: $btn-filter-border;
+    border-radius: 20px;
+    background: $btn-bg-color;
+    color: $btn-color;
+    font-weight: $font-weight-600;
+    width: 100%;
+
+    &.active {
+      color: $btn-hover-color;
+      background: $btn-hover-bg-color;
+    }
+
+    &:hover {
+      color: $btn-hover-color;
+      background: $btn-hover-bg-color;
+    }
+  }
+
+  &__card {
+    box-shadow: $card-shadow;
+    border-radius: 60px 0;
+    padding: 30px 20px 30px 90px;
+    width: 100%;
+    background-color: $card-bg-color-w;
+    position: relative;
+
+    &_img_block {
+      content: '';
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 35px;
+      left: 30px;
+    }
+
+    &.architecture {
+      background-color: $card-bg-color;
+
+      & h4,
+      & p {
+        color: $card-color;
+      }
+    }
+
+    &_title {
+      @include adaptive-font(24, 14);
+      font-weight: $font-weight-700;
+      color: $title-color;
+      position: relative;
+    }
+
+    &_text {
+      @include adaptive-font(18, 12);
+      font-weight: $font-weight-400;
+      color: $text-color;
+      margin: 0;
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    margin-bottom: 90px;
+    padding-bottom: 90px;
   }
 }
 
 @media (max-width: 576px) {
   .container {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
 
 @media (max-width: 320px) {
   .container {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 }
