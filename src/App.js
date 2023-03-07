@@ -21,14 +21,14 @@ function App() {
             } else {
                 window.close();
             }
-        }, 65000);
+        }, 60000);
 
         setTimer(timeoutId);
 
         return () => clearTimeout(timeoutId);
     }, []);
 
-    function handleUserActivity() {
+    const handleUserActivity = () => {
         if (timer) {
             clearTimeout(timer);
         }
