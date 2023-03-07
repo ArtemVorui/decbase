@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "imgSrc": "/icons/interior.svg",
+    "category": "interior",
+    "title": "Interior Design 1",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 2,
+    "imgSrc": "/icons/interior.svg",
+    "category": "interior",
+    "title": "Interior Design 2",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 3,
+    "imgSrc": "/icons/interior.svg",
+    "category": "interior",
+    "title": "Interior Design 3",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 4,
+    "imgSrc": "/icons/interior.svg",
+    "category": "interior",
+    "title": "Interior Design 4",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 5,
+    "imgSrc": "/icons/interior.svg",
+    "category": "interior",
+    "title": "Interior Design 5",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 6,
+    "imgSrc": "/icons/architecture.svg",
+    "category": "architecture",
+    "title": "Architecture 1",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 7,
+    "imgSrc": "/icons/architecture.svg",
+    "category": "architecture",
+    "title": "Architecture 2",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 8,
+    "imgSrc": "/icons/architecture.svg",
+    "category": "architecture",
+    "title": "Architecture 3",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 9,
+    "imgSrc": "/icons/architecture.svg",
+    "category": "architecture",
+    "title": "Architecture 4",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 10,
+    "imgSrc": "/icons/architecture.svg",
+    "category": "architecture",
+    "title": "Architecture 5",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 11,
+    "imgSrc": "/icons/planning.svg",
+    "category": "planning",
+    "title": "Planning 1",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 12,
+    "imgSrc": "/icons/planning.svg",
+    "category": "planning",
+    "title": "Planning 2",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 13,
+    "imgSrc": "/icons/planning.svg",
+    "category": "planning",
+    "title": "Planning 3",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 14,
+    "imgSrc": "/icons/planning.svg",
+    "category": "planning",
+    "title": "Planning 4",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  },
+  {
+    "id": 15,
+    "imgSrc": "/icons/planning.svg",
+    "category": "planning",
+    "title": "Planning 5",
+    "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+  }
+]
