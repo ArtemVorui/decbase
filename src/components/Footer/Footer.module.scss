@@ -61,6 +61,29 @@
     color: $text-color;
     text-align: center;
   }
+
+  &__btn {
+    @include adaptive-font(18, 12);
+    font-weight: $font-weight-600;
+    color: $btn-color;
+    border: $btn-border;
+    border-radius: 20px 0;
+    background: $btn-bg-color;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: $btn-hover-color;
+      background-color: $btn-hover-bg-color;
+    }
+  }
+
+  &__data_text {
+    @include adaptive-font(18, 12);
+    font-weight: $font-weight-400;
+    color: $text-color;
+  }
 }
 
 @media (max-width: 768px) {
