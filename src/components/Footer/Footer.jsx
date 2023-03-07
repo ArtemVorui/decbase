@@ -5,8 +5,17 @@ import iconSrc2 from '../../assets/icons/facebook.svg';
 import iconSrc3 from '../../assets/icons/twitter.svg';
 import iconSrc4 from '../../assets/icons/instagram.svg';
 import iconSrc5 from '../../assets/icons/linkedin.svg';
+import {useEffect, useState} from 'react';
 
 const Footer = () => {
+
+    const [date, setDate] = useState(new Date());
+
+    useEffect(() => {
+        const intervalId = setInterval(() => setDate(new Date()), 1000);
+        return () => clearInterval(intervalId);
+    }, []);
+
     return (
         <div className={s.container}>
             <Container className={s.footer}>
@@ -77,7 +86,7 @@ const Footer = () => {
                 </Row>
             </Container>
             <hr className={s.footer__hr}/>
-            <p className={s.footer__copyright}>Copyright @ 2020 Brandoxide.all right reserved.</p>
+            <p className={s.footer__copyright}>Copyright @ {date.toLocaleString()} Brandoxide.all right reserved.</p>
         </div>
     )
 }
