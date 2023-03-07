@@ -6,15 +6,24 @@ import iconSrc3 from '../../assets/icons/twitter.svg';
 import iconSrc4 from '../../assets/icons/instagram.svg';
 import iconSrc5 from '../../assets/icons/linkedin.svg';
 import {useEffect, useState} from 'react';
+import axios from 'axios';
 
 const Footer = () => {
 
     const [date, setDate] = useState(new Date());
+    const [weatherData, setWeatherData] = useState(null);
 
     useEffect(() => {
         const intervalId = setInterval(() => setDate(new Date()), 1000);
         return () => clearInterval(intervalId);
     }, []);
+
+    const getWeatherData = async () => {
+        const apiKey = 'e13daf25ea108835cc2870dfd449095b';
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Kyiv&appid=${apiKey}&units=metric`;
+        const response = await axios.get(apiUrl);
+        setWeatherData(response.data);
+    };
 
     return (
         <div className={s.container}>
@@ -25,6 +34,10 @@ const Footer = () => {
                         <p className={s.footer__text}>
                             But i must explain to you all this mistaken idea of dencouncing pleasure.
                         </p>
+                        <button className={s.footer__btn} onClick={getWeatherData}>Get the temperature in Kyiv</button>
+                        {weatherData && (
+                            <p className={s.footer__data_text}>Current Temperature: {weatherData.main.temp}°C</p>
+                        )}
                     </Col>
                     <Col className='col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 mb-3'>
                         <h3 className={s.footer__title}>Quick Links</h3>
