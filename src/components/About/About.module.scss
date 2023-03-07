@@ -5,7 +5,7 @@
   background-image: url('../../assets/images/dots.png');
   background-repeat: no-repeat;
   background-position: 100% 90%;
-  margin-bottom: 221px;
+  padding: 200px;
 }
 
 .about {
@@ -116,13 +116,13 @@
 
 @media (max-width: 768px) {
   .container {
-    margin-bottom: 90px;
+    padding: 90px 0;
   }
 }
 
 @media (max-width: 576px) {
   .container {
-    margin-bottom: 30px;
+    padding: 30px 0;
   }
 
   .about__row {
@@ -143,7 +143,7 @@
 
 @media (max-width: 320px) {
   .container {
-    margin-bottom: 50px;
+    padding: 50px 0;
   }
 
   .about__row {
