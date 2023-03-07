@@ -12,32 +12,51 @@ import {useEffect, useState} from 'react';
 
 function App() {
 
-    const [loading, setLoading] = useState(true);
+    const [timer, setTimer] = useState(null);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 5000);
+        const timeoutId = setTimeout(() => {
+            if (window.confirm('Are you still here? Click OK if you want to continue browsing the website.')) {
+                setTimer(null);
+            } else {
+                window.close();
+            }
+        }, 65000);
 
-        return () => clearTimeout(timer);
+        setTimer(timeoutId);
+
+        return () => clearTimeout(timeoutId);
     }, []);
+
+    function handleUserActivity() {
+        if (timer) {
+            clearTimeout(timer);
+        }
+
+        const timeoutId = setTimeout(() => {
+            if (window.confirm('Are you still here? Click OK if you want to continue browsing the website.')) {
+                setTimer(null);
+            } else {
+                window.close();
+            }
+        }, 60000);
+
+        setTimer(timeoutId);
+    }
 
     return (
         <>
-            {loading ? (
-                <Preloader/>
-            ) : (
-                <>
-                    <Header/>
-                    <Services/>
-                    <About/>
-                    <Statistics/>
-                    <Testimonials/>
-                    <Blog/>
-                    <Contact/>
-                    <Footer/>
-                </>
-            )}
+            <Preloader/>
+            <div onMouseMove={handleUserActivity} onClick={handleUserActivity}>
+                <Header/>
+                <Services/>
+                <About/>
+                <Statistics/>
+                <Testimonials/>
+                <Blog/>
+                <Contact/>
+                <Footer/>
+            </div>
         </>
     );
 }
