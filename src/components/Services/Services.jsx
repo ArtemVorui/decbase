@@ -17,7 +17,7 @@ const Services = () => {
 
     const [filtered, setFiltered] = useState(filterAll);
 
-    function servicesFilter(category) {
+    const servicesFilter = (category) => {
         if (category === 'all') {
             setFiltered(filterAll);
         } else {
@@ -28,7 +28,7 @@ const Services = () => {
 
     const [activeFilter, setActiveFilter] = useState('all');
 
-    function handleFilterClick(category) {
+    const handleFilterClick = (category) => {
         setActiveFilter(category);
     }
 
