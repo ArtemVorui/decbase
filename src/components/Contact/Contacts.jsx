@@ -1,7 +1,32 @@
 import s from './Contact.module.scss';
 import {Container, Row, Col} from 'react-bootstrap';
+import {Formik, Form, Field, ErrorMessage} from 'formik';
+import * as Yup from 'yup';
 
 const Contact = () => {
+
+    const initialValues = {
+        name: '',
+        surName: '',
+        email: ''
+    };
+
+    const validationSchema = Yup.object().shape({
+        name: Yup.string()
+            .matches(/^[A-Z][a-z]+$/, {message: <span>* Invalid name format</span>})
+            .required(<span>* Name is required</span>),
+        surName: Yup.string()
+            .matches(/^[A-Z][a-z]+$/, {message: <span>* Invalid surname format</span>})
+            .required(<span>* Surname is required</span>),
+        email: Yup.string()
+            .email(<span>Invalid email format</span>)
+            .required(<span>* Email is required</span>),
+    });
+
+    const onSubmit = (values) => {
+        localStorage.setItem('formData', JSON.stringify(values));
+    };
+
     return (
         <div id='contact' className={s.container}>
             <Container className={s.contact}>
@@ -17,22 +42,35 @@ const Contact = () => {
                 </Row>
                 <Row className='justify-content-center'>
                     <Col className='col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12'>
-                        <form className={`d-flex flex-column ${s.contact__form}`} action=''>
-                            <Row>
-                                <Col className='col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12 mb-3'>
-                                    <input type='text' placeholder='Enter your name.....'/>
-                                </Col>
-                                <Col className='col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12 mb-3'>
-                                    <input type='text' placeholder='Enter your surname.....'/>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col className='col-12 mb-xxl-5 mb-xl-5 mb-lg-5 mb-md-5 mb-sm-3 mb-3'>
-                                    <input type='email' placeholder='Enter your e-mail.....'/>
-                                </Col>
-                            </Row>
-                            <button className={`align-self-center ${s.contact__btn}`}>SUBSCRIBE</button>
-                        </form>
+                        <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
+                            {({isValid, dirty}) => (
+                                <Form className={`d-flex flex-column ${s.contact__form}`} action=''>
+                                    <Row>
+                                        <Col className='col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12 mb-3'>
+                                            <Field type='text' name='name' placeholder='Enter your name.....'
+                                                   required/>
+                                            <ErrorMessage name='name'/>
+                                        </Col>
+                                        <Col className='col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12 mb-3'>
+                                            <Field type='text' name='surName' placeholder='Enter your surname.....'
+                                                   required/>
+                                            <ErrorMessage name='surName'/>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col className='col-12 mb-xxl-5 mb-xl-5 mb-lg-5 mb-md-5 mb-sm-3 mb-3'>
+                                            <Field type='email' name='email' placeholder='Enter your e-mail.....'
+                                                   required/>
+                                            <ErrorMessage name='email'/>
+                                        </Col>
+                                    </Row>
+                                    <button type='submit' className={`align-self-center ${s.contact__btn}`}
+                                            disabled={!isValid || !dirty}>
+                                        SUBSCRIBE
+                                    </button>
+                                </Form>
+                            )}
+                        </Formik>
                     </Col>
                 </Row>
             </Container>
