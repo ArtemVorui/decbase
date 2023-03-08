@@ -19,7 +19,7 @@ const Contact = () => {
             .matches(/^[A-Z][a-z]+$/, {message: <span>* Invalid surname format</span>})
             .required(<span>* Surname is required</span>),
         email: Yup.string()
-            .email(<span>Invalid email format</span>)
+            .matches(/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/, {message: <span>Invalid email format</span>})
             .required(<span>* Email is required</span>),
     });
 
